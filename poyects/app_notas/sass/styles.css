@@ -1,0 +1,306 @@
+body {
+  background-color: white;
+}
+
+body h1 {
+  color: #2ca4ff;
+  font-size: 3rem;
+  margin: 5vh;
+}
+
+body .container {
+  width: 70vw;
+  height: 70vh;
+  margin: auto;
+  border: 2px solid #2ca4ff;
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container #sin-notas {
+  color: gray;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20vh;
+}
+
+body .container .notas {
+  width: 60vw;
+  height: 60vh;
+  overflow-y: auto;
+}
+
+body .container .notas::-webkit-scrollbar {
+  width: 10px;
+}
+
+body .container .notas::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+body .container .notas::-webkit-scrollbar-thumb {
+  background-color: #2ca4ff;
+  border-radius: 5px;
+}
+
+body .container .nota {
+  margin-bottom: 2%;
+}
+
+body .container .nota h2 {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+body .container .nota h2 p {
+  font-size: 1rem;
+}
+
+body .container .nota ion-icon {
+  color: gray;
+  font-size: 3vh;
+  padding: .75vh;
+  border-radius: 100%;
+}
+
+body .container .nota ion-icon:first-of-type {
+  margin-left: 80%;
+}
+
+body .container .nota ion-icon:hover {
+  -webkit-animation: iconHover 1s both;
+          animation: iconHover 1s both;
+}
+
+@-webkit-keyframes iconHover {
+  0% {
+  }
+  100% {
+    background-color: #2ca4ff;
+    border-radius: 100%;
+    color: white;
+  }
+}
+
+@keyframes iconHover {
+  0% {
+  }
+  100% {
+    background-color: #2ca4ff;
+    border-radius: 100%;
+    color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  body h1 {
+    font-size: 2.5rem;
+  }
+  body .container .nota h2 {
+    font-size: 1.5rem;
+  }
+  body .container .nota ion-icon {
+    font-size: 2.5vh;
+  }
+  body .container .nota ion-icon:first-of-type {
+    margin-left: 75%;
+  }
+}
+
+@media (max-width: 450px) {
+  body .container {
+    width: 90vw;
+  }
+  body .container .notas {
+    width: 80vw;
+  }
+}
+
+#btn-new-note {
+  background-color: #2ca4ff;
+  border: none;
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 3vh;
+  right: 5vw;
+  cursor: pointer;
+}
+
+#btn-new-note:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  #btn-new-note {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    top: 5vh;
+  }
+}
+
+.form-note, .form-edit-note {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: white;
+}
+
+.form-note form, .form-edit-note form {
+  position: relative;
+  top: 15vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70vw;
+  height: 70vh;
+  border: 2px solid gray;
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1%;
+}
+
+.form-note form label:first-of-type, .form-edit-note form label:first-of-type {
+  font-size: 3rem;
+  color: #2ca4ff;
+}
+
+.form-note form label, .form-edit-note form label {
+  font-size: 2rem;
+}
+
+.form-note form input, .form-edit-note form input {
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1.5rem;
+  width: 75%;
+}
+
+.form-note form textarea, .form-edit-note form textarea {
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1.5rem;
+  resize: none;
+  width: 75%;
+  height: 25vh;
+  cursor: pointer;
+}
+
+.form-note form textarea::-webkit-scrollbar, .form-edit-note form textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-note form textarea::-webkit-scrollbar-track, .form-edit-note form textarea::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+.form-note form textarea::-webkit-scrollbar-thumb, .form-edit-note form textarea::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.form-note form input[type="submit"], .form-edit-note form input[type="submit"] {
+  width: 30vw;
+  background-color: #2ca4ff;
+  color: white;
+  border: none;
+}
+
+.form-note form input[type="submit"]:hover, .form-edit-note form input[type="submit"]:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.form-note form *, .form-edit-note form * {
+  margin-top: 2vh;
+  margin-left: 5vw;
+}
+
+.form-note button, .form-edit-note button {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 5%;
+  left: 5%;
+  background-color: #2ca4ff;
+  border: none;
+  border-radius: 100%;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.form-note button:hover, .form-edit-note button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.form-note button:active, .form-edit-note button:active {
+  background-color: #2ca4ff;
+  color: white;
+}
+
+.none {
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+}
+
+@media (max-width: 600px) {
+  .form-note form, .form-edit-note form {
+    height: 60vh;
+  }
+  .form-note form label:first-of-type, .form-edit-note form label:first-of-type {
+    font-size: 2rem;
+  }
+  .form-note form label, .form-edit-note form label {
+    font-size: 1.5rem;
+  }
+  .form-note form input, .form-edit-note form input {
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  .form-note form textarea, .form-edit-note form textarea {
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  .form-note form input[type="submit"], .form-edit-note form input[type="submit"] {
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .form-note form, .form-edit-note form {
+    width: 80vw;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri Light", sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */

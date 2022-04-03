@@ -1,0 +1,30 @@
+@import 'variables';
+
+#btn-new-note{
+  background-color: $second-color;
+  border: none;
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+
+  color: $main-color;
+  font-size: $titulos;
+
+  position: absolute;
+  top: 3vh;
+  right: 5vw;
+
+  cursor: pointer;
+}
+#btn-new-note:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  #btn-new-note{
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    top: 5vh;
+  }
+}

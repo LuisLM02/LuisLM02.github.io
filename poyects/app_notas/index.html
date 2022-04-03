@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./sass/styles.css">
+  <title>Notas</title>
+</head>
+<body>
+  <nav>
+    <h1>Notas</h1>
+  </nav>
+
+  <div class="container">
+    <div class="notas">
+      <template id="note-template">
+        <div class="nota">
+          <h2 class="titulo"></h2>
+          <p class="contenido"></p>
+          <ion-icon name="pencil-outline" class="edit"></ion-icon>
+          <ion-icon name="trash-outline" class="delete"></ion-icon>
+        </div>
+      </template>
+      <p id="sin-notas">No tiene notas</p>
+    </div>
+  </div>
+
+  <button id="btn-new-note">+</button>
+
+  <div class="form-note none">
+    <form>
+      <label>Nueva nota</label>
+      <br>
+      <label for="tituloNota">Titulo</label>
+      <br>
+      <input type="text" name="tituloNota" autocomplete="off" placeholder="Titulo..." title="Inserte el titulo de la nota" required >
+      <br>
+      <textarea name="contenido" name="contenido" cols="30" rows="10" autocomplete="off" title="Escriba el contenido de la nota" placeholder="Nota..." required></textarea>
+      <input type="submit" value="Guardar">
+    </form>
+    <button>&larr;</button>
+  </div>
+
+  <div class="form-edit-note none">
+    <form>
+      <label>Editar nota</label>
+      <br>
+      <label for="tituloNota">Titulo</label>
+      <br>
+      <input type="text" name="tituloNota" autocomplete="off" placeholder="Titulo..." title="Inserte el titulo de la nota" required >
+      <br>
+      <textarea name="contenido" name="contenido" cols="30" rows="10" autocomplete="off" title="Escriba el contenido de la nota" placeholder="Nota..." required></textarea>
+      <input type="submit" value="Guardar">
+    </form>
+    <button>&larr;</button>
+  </div>
+
+  <script src="./js/index.js" type="module"></script>
+  <script src="./js/Nota.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./sass/style.css">
+  <title>Portafolio</title>
+</head>
+
+<body>
+
+  <nav class="menu responsive">
+    <li><a href="#presentacion">Inicio</a></li>
+    <li><a href="#sobre-mi">Sobre mi</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </nav>
+
+  <div class="menu-btn desactive">
+    <div class="menu-btn__burguer"></div>
+  </div>
+
+  <div id="presentacion">
+    <img id="foto" src="./img/foto-bn.jpg" alt="">
+    <div id="titulo">
+      <h1>
+        Hola yo soy <br>
+        Luis López Martell <br>
+        Desarrollador Front-End Jr.
+      </h1>
+    </div>
+  </div>
+
+  <div id="sobre-mi" class="animation">
+    <h2>Sobre mi</h2>
+    <p>
+      Soy una persona creativa, responsable, organizada, me gustan los retos, aprender cosas nuevas y el trabajo en equipo.<br>
+      Actualmente, me encuentro en busca de oportunidades para realizar prácticas profesionales y tener mi primer acercamiento al mundo laboral.
+    </p>
+    <h2>Skills</h2>
+    <div class="skills">
+      <template class="tarjeta">
+        <figure class="card">
+          <img src="" alt="">
+          <figcaption></figcaption>
+        </figure>
+      </template>
+    </div>
+  </div>
+
+  <div id="proyectos" class="animation">
+    <h2>Proyectos</h2>
+    <div class="slider">
+
+      <template class="proyectos-template">
+        <div class="slider-slides">
+          <img src="" alt="" class="img-slider">
+          <div>
+            <h3 class="title-slider"></h3>
+            <p class="text-slider"></p>
+            <a href="" class="link" target="_blank">Ver</a>
+            <a href="" class="link-github" target="_blank">Github</a>
+          </div>
+        </div>
+      </template>
+
+    </div>
+
+    <div class="botons-sliders"></div>
+  </div>
+
+  <div id="contacto" class="animation">
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:luis.lopez.martell.llm@outlook.com">luis.lopez.martell.llm@outlook.com</a></p>
+    <p>WhatsApp: <a href="tel:+527714339173">+52 771 433 9173</a></p>
+    <p>Github: <a href="https://github.com/LuisLM02" target="_blank">LuisLM02</a></p>
+    <br>
+    <p>Ubicación: Mineral del Monte, Hidalgo, México <img src="./img/locationpng.png" alt="Ubicación"></p>
+  </div>
+
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>

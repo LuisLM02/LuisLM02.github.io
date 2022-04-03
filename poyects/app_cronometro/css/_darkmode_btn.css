@@ -1,0 +1,24 @@
+@import '_variables.css';
+
+#theme-btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--font-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#theme-btn *{
+  font-size: 2rem;
+}
+.lightmode{
+  color: var(--font-color2);
+}

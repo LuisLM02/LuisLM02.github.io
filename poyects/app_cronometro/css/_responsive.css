@@ -1,0 +1,39 @@
+@import '_variables.css';
+
+@media (max-width: 800px){
+   #reloj{
+    font-size: 8rem;
+  }
+  button{
+    font-size: 1.5rem;
+    width: 18vh;
+    height: 9;
+  }
+}
+
+@media (max-width: 600px){
+  #reloj{
+    font-size: 7rem;
+  }
+  .botones{
+    margin-top: 25vh;
+  }
+  button{
+    width: 16vh;
+    height: 8vh;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px){
+  nav h1{
+    font-size: 3rem;
+  }
+  #reloj{
+    font-size: 5rem;
+  }
+  .botones button{
+    font-size: 1rem;
+  }
+
+}

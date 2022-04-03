@@ -1,0 +1,69 @@
+@import "variables";
+
+#sobre-mi {
+  padding: $margen;
+  
+  opacity: 0;
+  transition: .7s ease-in-out all;
+
+  h2 {
+    color: $color2;
+    font-size: $letraG;
+  }
+  
+  p {
+    color: $color2;
+    font-size: $letraC;
+    margin-bottom: 5%;
+  }
+
+  
+  h2:last-of-type{
+    text-align: center;
+  }
+
+  .skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .card{
+      display: inline-block;
+      color: $color2;
+      margin: 1%;
+
+      img{
+        width: 8vw;
+        height: 8vw;
+      }
+
+      figcaption{
+        text-align: center;
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    .skills{
+      .card{
+        img{
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    h2{
+      font-size: 3rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 500px) {
+    h2{
+      font-size: 2rem;
+    }
+  }
+}
+

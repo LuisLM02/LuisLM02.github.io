@@ -1,0 +1,28 @@
+@import '_variables.css';
+
+body{
+  background-color: var(--font-color);
+  font-family: var(--font-text), sans-serif;
+  color: var(--main-color);
+}
+
+nav{
+  background-color: var(--main-color);
+}
+h1{
+  font-size: var(--titulo);
+  color: var(--font-color);
+  margin-left: 2%;
+}
+.contenedor{
+  max-width: 70vw;
+  margin: auto;
+}
+
+
+.display{
+  margin-top: 15vh;
+  text-align: center;
+  font-size: var(--reloj);
+}
+

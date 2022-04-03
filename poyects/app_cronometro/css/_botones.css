@@ -1,0 +1,44 @@
+@import '_variables.css';
+
+
+.botones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+}
+
+button{
+  width: 20vw;
+  height: 10vh;
+
+  font-family: var(--font-text);
+  font-size: 2rem;
+
+  margin: 2%;
+  border: none;
+  border-radius: 10px;
+}
+button:hover{
+  transform: scale(1.1);
+}
+button:active{
+  filter: brightness(1.75);
+}
+
+#btn-play{
+  background-color: var(--main-color);
+}
+#btn-continue{
+  background: rgb(0, 128, 0);
+}
+#btn-stop{
+  background-color: rgb(185, 3, 3);
+}
+#btn-reset{
+  background-color: rgb(233, 233, 5);
+}
+
+.none{
+  display: none;
+}

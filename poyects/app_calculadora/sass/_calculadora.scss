@@ -1,0 +1,108 @@
+@import 'variables';
+
+body{
+  background-color: $main-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .contenedor{
+    background-color: $second-color;
+    width: 30vw;
+    margin-top: 1vh;
+
+    border-radius: 20px;
+    box-shadow: -10px 10px $shadow-color;
+
+    animation: animacion1 3s;
+
+    #display{
+      position: relative;
+      width: 90%;
+      height: 20vh;
+      margin: auto;
+      margin-top: 5%;
+
+      background-color: $main-color;
+      border-radius: 15px;
+
+      span{
+        display: block;
+        box-sizing: border-box;
+        max-width: 90%;
+        height: 10vh;
+        margin: auto;
+
+        color: $shadow-color;
+        font-size: $display-text;
+        font-family: $display-text;
+        overflow-x: scroll;
+      }
+      span::-webkit-scrollbar{
+        background-color: black;
+        height: 7px;
+      }
+      span::-webkit-scrollbar-thumb{
+        background-color: $second-color;
+        border-radius: 20px;
+
+      }
+    }
+
+    .botones{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      
+      button{
+        background-color: $second-color;
+        border: 1px solid $shadow-color;
+        border-radius: 100%;
+        box-shadow: -3px 3px $shadow-color;
+        font-family: $font-buttons;
+        font-size: 2rem;
+        height: 6vw;
+        width: 6vw;
+        margin: 9%;
+      }
+      button:active{
+        filter: brightness(75%);
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  @keyframes animacion1 {
+    0%{
+      transform: translateY(-100%);
+    }
+    100%{
+      transform: translateY(0%);
+    }
+  }
+
+  @media (max-width: 1000px){
+    .contenedor{
+      width: 40vw;
+
+      .botones{
+        button{
+          width: 7vw;
+          height: 7vw;
+        }
+      }
+    }
+  }
+  @media (max-width: 800px){
+    .contenedor{
+      min-width: 300px;
+
+      .botones{
+        button{
+          width: 7vh;
+          height: 7vh;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

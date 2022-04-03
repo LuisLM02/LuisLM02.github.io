@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Cronómetro</title>
+</head>
+<body>
+  <nav>
+    <h1 darkmode>Cronómetro</h1>
+  </nav>
+  <div class="contenedor">
+    <div class="display">
+      <span id="reloj">00:00.0</span>
+    </div>
+  </div>
+  <div class="botones">
+      <button id="btn-play" darkmode>Inicio</button>
+      <button id="btn-continue" class="none" darkmode>Continuar</button>
+      <button id="btn-stop" class="none" darkmode>Detener</button>
+      <button id="btn-reset" class="none" darkmode>Reiniciar</button>
+  </div>
+  <button id="theme-btn"><ion-icon name="moon-outline"></ion-icon></button>
+  <script src="./js/index.js" type="module"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

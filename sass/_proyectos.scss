@@ -1,0 +1,114 @@
+@import "variables";
+
+#proyectos{
+  padding: $margen;
+
+  opacity: 0;
+  transition: .7s ease-in-out all;
+  position: relative;
+  height: 80vh;
+
+  h2{
+    color: $color2;
+    font-size: $letraG;
+    padding-bottom: 5vh;
+  }
+
+  .slider{
+    position: relative;
+    
+
+    .slider-slides{
+      box-sizing: border-box;
+      border-radius: 20px;
+      width: 50vw;
+      height: 80vh;
+      margin: auto;
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      top: 5%;
+      left: 0;
+      right: 0;
+
+      opacity: 0;
+      visibility: hidden;
+      transition: .7s ease-in-out all;
+
+      img{
+        height: 50%;
+        margin: 5%;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+      div{
+        color: $color2;
+        margin: 3%;
+        h3{
+          font-size: $letraC;
+        }
+
+        a{
+          display: inline-block;
+          width: 40%;
+          margin-top: 5%;
+          padding: 4%;
+
+          color: $color1;
+          background-color: $color2;
+          border-radius: 10px;
+
+          text-align: center;
+          text-decoration: none;
+        }
+        a:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+    .active-slider{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .botons-sliders{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -5vh;
+
+    button{
+      width: 2vh;
+      height: 2vh;
+      border-radius: 100%;
+      border: none;
+      margin: 1%;
+      cursor: pointer;
+    }
+    button:hover{
+      transform: scale(1.1);
+    }
+
+    .active-btn{
+      background-color: grey;
+    }
+  }
+
+  @media (max-width: 700px) {
+    h2{
+      font-size: 3rem;
+    }
+    .slider{
+      .slider-slides{
+        width: 70vw;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    h2{
+      font-size: 2rem;
+    }
+  }
+}

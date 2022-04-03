@@ -1,0 +1,139 @@
+@import "variables";
+
+.form-note , .form-edit-note{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  background-color: $main-color;
+
+  form {
+    position: relative;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 70vw;
+    height: 70vh;
+
+    border: 2px solid $icon-color;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+    padding: 1%;
+
+    label:first-of-type {
+      font-size: $titulos;
+      color: $second-color;
+    }
+    label {
+      font-size: $tituloNota;
+    }
+    input {
+      border: 2px solid $icon-color;
+      border-radius: 10px;
+      padding: 1%;
+      font-size: $input-text;
+      width: 75%;
+    }
+    textarea {
+      border: 2px solid $icon-color;
+      border-radius: 10px;
+      padding: 1%;
+      font-size: $input-text;
+      resize: none;
+      width: 75%;
+      height: 25vh;
+      cursor: pointer;
+    }
+    textarea::-webkit-scrollbar {
+      width: 8px;
+    }
+    textarea::-webkit-scrollbar-track {
+      background-color: none;
+    }
+    textarea::-webkit-scrollbar-thumb {
+      background-color: $icon-color;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      width: 30vw;
+      background-color: $second-color;
+      color: $main-color;
+      border: none;
+    }
+    input[type="submit"]:hover {
+      transform: scale(1.1);
+    }
+  }
+  form * {
+    margin-top: 2vh;
+    margin-left: 5vw;
+  }
+
+  button {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 5%;
+    left: 5%;
+
+    background-color: $second-color;
+    border: none;
+    border-radius: 100%;
+    color: $main-color;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
+  button:active {
+    background-color: $second-color;
+    color: $main-color;
+  }
+}
+
+.none {
+  transform: translate(-100%);
+}
+
+@media (max-width: 600px) {
+  .form-note , .form-edit-note{
+    form{
+      height: 60vh;
+
+      label:first-of-type{
+        font-size: 2rem;
+      }
+      label{
+        font-size: 1.5rem;
+      }
+      input{
+        font-size: 1rem;
+        border-radius: 5px;
+      }
+      textarea{
+        font-size: 1rem;
+        border-radius: 5px;
+      }
+      input[type="submit"]{
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .form-note , .form-edit-note{
+    form{
+      width: 80vw;
+    }
+  }
+}

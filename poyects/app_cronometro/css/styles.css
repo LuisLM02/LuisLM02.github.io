@@ -1,0 +1,9 @@
+@import '_display.css';
+@import '_botones.css';
+@import '_darkmode_btn.css';
+@import '_responsive.css';
+
+*{
+  margin: 0;
+  padding: 0;
+}

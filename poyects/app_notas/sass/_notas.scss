@@ -1,0 +1,118 @@
+@import "variables";
+
+body {
+  background-color: $main-color;
+
+  h1 {
+    color: $second-color;
+    font-size: $titulos;
+    margin: 5vh;
+  }
+
+  .container {
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+
+    border: 2px solid $second-color;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #sin-notas{
+      color: $icon-color;
+      font-size: $tituloNota;
+
+      text-align: center;
+      margin-top: 20vh;
+    }
+
+    .notas {
+      width: 60vw;
+      height: 60vh;
+      
+      overflow-y: auto;
+    }
+    .notas::-webkit-scrollbar {
+      width: 10px;
+    }
+    .notas::-webkit-scrollbar-track {
+      background-color: none;
+    }
+    .notas::-webkit-scrollbar-thumb {
+      background-color: $second-color;
+      border-radius: 5px;
+    }
+
+    .nota {
+      margin-bottom: 2%;
+
+      h2{
+        display: inline-block;
+        font-size: $tituloNota;
+
+        p{
+          font-size: $textoNota;
+        }
+      }
+      ion-icon{
+        color: $icon-color;
+        font-size: 3vh;
+        padding: .75vh;
+        border-radius: 100%;
+      }
+      ion-icon:first-of-type{
+        margin-left: 80%;
+      }
+      ion-icon:hover{
+        animation: iconHover 1s both;
+      }
+
+      @keyframes iconHover {
+        0%{}
+        100%{
+        background-color: $second-color;
+        border-radius: 100%;
+        color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  body{
+    h1{
+      font-size: 2.5rem;
+    }
+    .container{
+      .nota{
+        h2{
+          font-size: 1.5rem;
+        }
+        ion-icon{
+          font-size: 2.5vh;
+        }
+        ion-icon:first-of-type{
+          margin-left: 75%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:450px) {
+  body{
+    .container{
+      width: 90vw;
+
+      .notas{
+        width: 80vw;
+      }
+    }
+  }
+}

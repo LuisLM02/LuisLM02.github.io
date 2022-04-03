@@ -1,0 +1,33 @@
+@import "variables";
+
+#contacto{
+  background-color: $color2;
+  padding: $margen;
+  margin-top: 10vh;
+
+  opacity: 0;
+  transition: .7s ease-in-out all;
+
+  h2{
+    color: $color1;
+    font-size: $letraG;
+  }
+  a{
+    text-decoration: none;
+    color: $color1;
+  }
+  img{
+    width: 1rem;
+  }
+
+  @media (max-width: 700px) {
+    h2{
+      font-size: 3rem;
+    }
+  }
+  @media (max-width: 500px) {
+    h2{
+      font-size: 2rem;
+    }
+  }
+}
