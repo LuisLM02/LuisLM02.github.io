@@ -39,5 +39,12 @@ export const proyectos = [
       link: "../../poyects/app_calculadora/index.html",
       linkGit: "https://github.com/LuisLM02/App-Calculadora"
     },
-    
+    {
+      id: 6,
+      img: "../img-slides/app_musica.png",
+      titulo: "Música",
+      descripcion: "Aplicación para listar tus canciones favoritas con funciones agregar, editar y borrar canción, este proyecto fue programado con HTML, SASS, JavaScript y empaquetado con Webpack.",
+      link: "../../poyects/app_musica/index.html",
+      linkGit: "https://github.com/LuisLM02/App-Musica"
+    },
 ]
