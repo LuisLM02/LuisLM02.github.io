@@ -7,5 +7,6 @@ export const skills = [
   {"src":"../assets/bootstrap5.svg","text":"Bootstrap 5"},
   {"src":"../assets/adobexd.svg","text":"Adobe XD"},
   {"src":"../assets/git.svg","text":"Git"},
-  {"src":"../assets/github.svg","text":"GitHub"}
+  {"src":"../assets/github.svg","text":"GitHub"},
+  {"src":"../assets/react.svg","text":"React"}
 ]
